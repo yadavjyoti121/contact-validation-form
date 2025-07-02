@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Support Request</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h2>Need Help? Submit a Support Request</h2>
+      <form id="supportForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Jyoti yadav" />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="jyoti@gmail.com" />
+        <span class="error" id="emailError"></span>
+
+        <label for="issue">Describe Your Issue</label>
+        <textarea
+          id="issue"
+          placeholder="Briefly describe your problem..."
+        ></textarea>
+        <span class="error" id="issueError"></span>
+
+        <button type="submit">Submit Request</button>
+        <p id="successMsg"></p>
+      </form>
+    </div>
+
+    <script src="validate.js"></script>
+  </body>
+</html>
